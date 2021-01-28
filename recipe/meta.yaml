@@ -1,5 +1,5 @@
 {% set name = "bqscales" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2f7400857c22d1a1c217aa6c22f32980fc9e8db347072ad45d9f14d92df6550a
-  patches:
-    # Missing import
-    - 0001-Fix-missing-import-in-setup.py.patch
+  sha256: 6812ef1dddc95467c3193417437dd919059d2f5f7c58cd62d23d7cc5241deee3
 
 build:
   noarch: python
