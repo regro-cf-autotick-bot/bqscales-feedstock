@@ -1,5 +1,5 @@
 {% set name = "bqscales" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: da1ac57a6e040074703bb06a2b62d86b81b18f74bee5540616226951262cc56f
+  sha256: ec1445f88c426397d82d4d073190982e78b5ead8ae650dd83f3b45fcd0f91796
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Grammar of Graphics Scales for bqplot and other Jupyter Widgets libraries'
+  summary: Grammar of Graphics Scales for bqplot and other Jupyter Widgets libraries
   dev_url: https://github.com/bqplot/bqscales
 
 extra:
