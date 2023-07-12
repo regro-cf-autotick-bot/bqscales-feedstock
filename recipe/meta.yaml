@@ -22,6 +22,7 @@ requirements:
     - hatchling
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
+    - yarn =3
   run:
     - python >=3.6
     - ipywidgets >=8.0.1,<9
