@@ -20,6 +20,7 @@ requirements:
     - pip
     - jupyter-packaging
     - hatchling
+    - hatch-jupyter-builder
     - jupyterlab >=4,<5
   run:
     - python >=3.6
